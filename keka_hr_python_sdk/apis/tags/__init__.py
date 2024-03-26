@@ -1,0 +1,46 @@
+# do not import all endpoints into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all endpoints from this module, import them with
+# from keka_hr_python_sdk.apis.tag_to_api import tag_to_api
+
+import enum
+
+
+class TagValues(str, enum.Enum):
+    JOBS = "Jobs"
+    EMPLOYEES = "Employees"
+    PROJECTS = "Projects"
+    PAY_CYCLES = "PayCycles"
+    CLIENTS = "Clients"
+    TASKS = "Tasks"
+    TALENT_POOL = "TalentPool"
+    GROUPS = "Groups"
+    LEAVE_REQUESTS = "LeaveRequests"
+    PROJECT_PHASES = "ProjectPhases"
+    GOAL = "Goal"
+    PRAISE = "Praise"
+    DEPARTMENTS = "Departments"
+    LOCATIONS = "Locations"
+    JOB_TITLE = "JobTitle"
+    CURRENCY = "Currency"
+    NOTICE_PERIOD = "NoticePeriod"
+    LEAVE_TYPES = "LeaveTypes"
+    LEAVE_BALANCE = "LeaveBalance"
+    ATTENDANCE = "Attendance"
+    ATTENDANCE_CAPTURE_SCHEME = "AttendanceCaptureScheme"
+    HOLIDAY_CALENDAR = "HolidayCalendar"
+    SALARY_COMPONENTS = "SalaryComponents"
+    PAY_GROUPS = "PayGroups"
+    PAY_GRADES = "PayGrades"
+    PAY_BANDS = "PayBands"
+    TIMESHEET_ENTRIES = "TimesheetEntries"
+    TIME_FRAMES = "TimeFrames"
+    BADGE = "Badge"
+    EXPENSE_CATEGORY = "ExpenseCategory"
+    EXPENSE = "Expense"
+    EXPENSE_POLICY = "ExpensePolicy"
+    ASSET = "Asset"
+    ASSET_TYPE = "AssetType"
+    ASSET_CATEGORY = "AssetCategory"
+    ASSET_CONDITION = "AssetCondition"
+    REQUISITION_REQUEST = "RequisitionRequest"
+    AUTHENTICATION = "Authentication"
